@@ -353,6 +353,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabEnemies:
+  - {fileID: 1864666716847092, guid: a69aa768d15cba34b96a5422e50dc9b4, type: 3}
+  - {fileID: 1801717105832950, guid: cb4206b8e00300649994ecf8ffe838d5, type: 3}
+  - {fileID: 1158547974957732, guid: a0a74b7d2e3ac2449b0e77185af83fed, type: 3}
+  - {fileID: 1700942416061258, guid: 3f6055558a488314cb38691d88c41fdf, type: 3}
+  - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
   - {fileID: 3277088164844025720, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
   enemySpawnPerSecond: 0.5
   enemyDefaultPadding: 1.5
@@ -784,19 +789,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 227546321, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
       propertyPath: m_Name
-      value: Barrel
+      value: Barrel_1
       objectReference: {fileID: 0}
     - target: {fileID: 323123324, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
       propertyPath: m_Name
-      value: Collar
+      value: Collar_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 323123325, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 496987652, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
       propertyPath: m_Name
-      value: Collar
+      value: Collar_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 496987653, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1755963620, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
       propertyPath: m_Name
-      value: Barrel
+      value: Barrel_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755963621, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3273471802274808072, guid: 7be56ccdcc3714e3c9da8c63ea38685f,
         type: 3}
@@ -872,7 +889,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collar
       value: 
-      objectReference: {fileID: 530944870}
+      objectReference: {fileID: 0}
     - target: {fileID: 8085430097868147803, guid: 7be56ccdcc3714e3c9da8c63ea38685f,
         type: 3}
       propertyPath: Collar_1
@@ -883,6 +900,23 @@ PrefabInstance:
       propertyPath: Collar_2
       value: 
       objectReference: {fileID: 1631139511}
+    - target: {fileID: 8085430097868147803, guid: 7be56ccdcc3714e3c9da8c63ea38685f,
+        type: 3}
+      propertyPath: def.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085430097868147803, guid: 7be56ccdcc3714e3c9da8c63ea38685f,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+        type: 3}
+    - target: {fileID: 8085430097868147803, guid: 7be56ccdcc3714e3c9da8c63ea38685f,
+        type: 3}
+      propertyPath: def.projectilePrefab
+      value: 
+      objectReference: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7be56ccdcc3714e3c9da8c63ea38685f, type: 3}

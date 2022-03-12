@@ -17,7 +17,6 @@ public class Enemy_5 : Enemy {
     private Vector3 p0, p1; // The two points to interpolate
     private float timeStart; // Birth time for this Enemy_4
     private float duration = 4; // Duration of movement
-    //private bool shooting = false;
     private float lastShotTime;
     public int numberShotsinburst = 3;
     private int numberofShotsleft;
@@ -45,7 +44,7 @@ public class Enemy_5 : Enemy {
         // so add it to points as the initial p0 & p1
         p0 = p1 = pos;
 
-        collar = transform.Find("Collar").gameObject;
+        collar = transform.Find("Collar_1").gameObject;
         collarRend = collar.GetComponent<Renderer>();
 
         InitMovement();
@@ -117,7 +116,7 @@ public void Fire()
         u = 1 - Mathf.Pow(1 - u, 2); // Apply Ease Out easing to u
         pos = ((1 - u) * p0) + (u * p1);// Simple linear interpolation
     }
- public Projectile MakeProjectile()
+    public Projectile MakeProjectile()
     {
         GameObject go = Instantiate<GameObject>(def.projectilePrefab);
         go.tag = "ProjectileEnemy";
@@ -126,7 +125,6 @@ public void Fire()
         go.transform.position = collar.transform.position;
         go.transform.SetParent(PROJECTILE_ANCHOR, true);
         Projectile p = go.GetComponent<Projectile>();
-       // p.type = type;
         lastShotTime = Time.time;
         return p;
     }
