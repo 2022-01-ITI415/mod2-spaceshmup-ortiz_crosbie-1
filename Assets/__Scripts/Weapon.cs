@@ -16,6 +16,7 @@ public enum WeaponType
     missile, // [NI] Homing missiles
     laser, // [NI] Damage over time
     shield // Raise shieldLevel
+    
 }
 
 /// <summary>
@@ -33,7 +34,7 @@ public class WeaponDefinition
     public Color projectileColor = Color.white;
     public float damageOnHit = 0; // Amount of damage caused
     public float continuousDamage = 0; // Damage per second (Laser)
-    public float delayBetweenShots = 0;
+    public float delayBetweenShots = -1;
     public float velocity = 20; // Speed of projectiles
 }
 public class Weapon : MonoBehaviour {
